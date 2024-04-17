@@ -1,0 +1,40 @@
+.modalList-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: end;
+
+  }
+  .list{
+    text-align: center;
+  }
+  .modalList {
+    position: relative;
+    background-color: #fff;
+    max-width: 500px;
+    width: 30%;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    background: transparent;
+    color: black;
+    border: transparent;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    transform: scale(1.2); /* ปรับขนาดเมื่อโฮเวอร์ */
+    color: red;
+  }
+  .cart-list{
+    display: flex;
+    flex-direction: column;
+  }

@@ -1,87 +1,108 @@
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
+
 .container-login {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "h h h"
         "l r r"
         "f f f";
-    grid-template-rows: auto 1fr auto; 
+    grid-template-rows: auto 1fr auto;
     height: 100vh;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
 }
-.navbar{
+
+.navbar {
     grid-area: h;
 }
-.content-left{
+
+.content-left {
     grid-area: l;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(205, 79, 30); */
-
+    background-image: url(../images/best-food-background-07o89ooony6airsk.jpg);
+    background-repeat: no-repeat;
 }
-.content-right{
+
+.content-right {
     grid-area: r;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
-.footer{
+
+.footer {
     grid-area: f;
 }
-
-.form-login {
-    
+.form-login{
     width: 50%;
     height: 60%;
-   
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 20px ;
-    background-color: rgb(249, 249, 249);
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: #FA8072 1px solid;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 8px;
 }
-
-.header-login {
+.form-register{
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: #FA8072 1px solid;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 8px;
+}
+.header{
     text-align: center;
     margin: 10px;
 }
 
-form .input-form,form .input-form input {
+form .input-form,
+form .input-form input {
     margin-top: 10px
 }
 
 
 form .input-form input {
-    width: calc(100% - 2px); 
+    width: calc(100% - 2px);
     height: 30px;
     padding-left: 5px;
     border-radius: 7px;
-    border: none;
-    outline: none;
+    border: 1px solid rgb(218, 209, 209);
 }
-.btn-login{
+
+.btn-login,.btn-verify  {
     display: flex;
     justify-content: center;
-    margin-top: 10px
+    margin-top: 10px;
+
 }
-.btn-login button{
-    padding: 10px;
+
+.btn-login button,.btn-verify  button {
     border-radius: 15px;
-    border-style: none;
+    background-color: #FA8072;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 12px;
+    font-family: "K2D", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
-.register-link{
+.btn-login:hover button,.btn-verify:hover button{
+    background-color: #d87065;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 12px;
+    cursor: pointer;
+}
+
+.register-link {
     text-align: center;
     margin-top: 20px;
-}
-color{
-    color: rgb(233, 233, 233);
 }

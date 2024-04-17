@@ -1,0 +1,27 @@
+.meal-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin: 50px 50px;
+
+}
+.meal-detail {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-direction: column;
+}
+
+.meal-detail:hover {
+   border: 1px solid #FA8072;
+
+}
+.meal-detail span{
+    margin-top: 5px;
+}
+.meal-detail .add{
+    cursor: pointer;
+}

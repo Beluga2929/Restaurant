@@ -1,5 +1,14 @@
-export const Footer=() => {
-       return(
-        <div style={{backgroundColor:'#E9EAEC',padding:'40px'}}>footer</div>
-       )
-}
+export const Footer = () => {
+  return (
+    <div
+      style={{
+        backgroundColor: "white",
+        padding: "40px",
+       textAlign:'center'
+
+      }}
+    >
+      ติดต่อเรา
+    </div>
+  );
+};

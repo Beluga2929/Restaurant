@@ -1,13 +1,124 @@
-.typeMenu ul{
+.navbarMenu{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+.navbarMenu ul{
     display: flex;
 }
-.typeMenu a{
+.navbarMenu a{
     text-decoration: none;
     margin-left: 10px;
     font-size: large;
     color: black;
-   
 }
-.typeMenu li{
+.navbarMenu li{
     list-style: none;
 }
+
+.typeMenu:hover {
+   cursor: pointer;
+}
+.searchBar{
+    --padding:14px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(216, 211, 211);
+    padding: var(--padding);
+    width: 40%;
+    height: 10px;
+    border-radius: 28px;
+    margin-left:var(--padding);
+}
+.searchBar input{
+    margin-left:  var(--padding);
+    border: none;
+    background-color: transparent;
+}
+.btn-random,.btn-order{
+    padding: 10px 20px;
+    width: 130px; 
+    background-color: #FA8072;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 12px;
+    font-family: "K2D", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+.btn-random:hover,.btn-order:hover{
+    background-color: #e87a6d;
+    transition: all ;
+    cursor: pointer;
+}
+.card-random{
+   
+    width: 60%;
+    height: 300px;
+}
+.btn-random-group{
+    margin-top: 20px;
+}
+.btn-add-list{
+    margin-left: 20px;
+    background-color: #FA8072;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 12px;
+    font-family: "K2D", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.btn-new-random{
+    background-color: #fac472;
+    box-shadow: rgb(241, 222, 174) 0px 4px 12px;
+    font-family: "K2D", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.btn-new-random:hover{
+    background-color: #dcac64;
+    cursor: pointer;
+}
+.popup-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+  } 
+  .btn-checklist {
+    margin-top: auto;
+    margin-bottom: 50px;
+    width: 60%;
+    background-color: #FA8072;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 12px;
+    font-family: "K2D", sans-serif;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+  }
+  .btn-checklist:hover{
+    background-color: #ca6a5f;
+    box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 12px;
+    cursor: pointer;
+  }
+.orderList{
+    display: flex;
+    flex-direction: column;
+    
+}
+.decrement-button,.increment-button{
+    background-color: #FA8072;
+    border: none;
+    color: white;
+    margin-left: 5px;
+}
+
+.menu-type-name:hover {
+    font-size: 20px; 
+    color: #e87a6d;
+  }

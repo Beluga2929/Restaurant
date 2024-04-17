@@ -1,0 +1,58 @@
+.table-container {
+  margin: 60px auto;
+  width: 50%;
+
+
+}
+
+.table-container h2 {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 21px;
+  margin: 0;
+  background-color: white;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px 15px;
+}
+
+.btn-cancel-book {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cancel,
+.btn-book {
+  width: 120px;
+  font-family: "K2D", sans-serif;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+.btn-book {
+  background-color: #FA8072;
+  box-shadow: rgba(223, 79, 79, 0.529) 0px 4px 12px;
+  color: white;
+}
+.btn-book:hover{
+  background-color: #c26459;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: #fdd8d4;
+  box-shadow: #dabbb8 0px 4px 12px;
+  color: black;
+}

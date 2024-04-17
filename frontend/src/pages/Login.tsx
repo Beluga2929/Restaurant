@@ -1,23 +1,27 @@
-import { Navbar } from "../components/Navbar";
+import {Navbarlogin} from "../components/Navbarlogin"
 import "../pages/Login.css";
 import { Footer } from "../components/Footer";
 export const Login = () => {
+  const handleToFood =()=>{
+    window.location.href='/food'
+  }
   return (
     <div className="container-login">
       <div className="navbar">
-        <Navbar />
+        <Navbarlogin />
       </div>
       <div className="content-left">
       
       </div>
       <div className="content-right">
+       
         <div className="form-login">
-          <div className="header-login">กรุณาเข้าสู่ระบบ</div>
+          <div className="header">กรุณาเข้าสู่ระบบ</div>
           <form action="">
             <div className="input-form">
               <span>ชื่อผู้ใช้</span>
               <br />
-              <input type="text" />
+              <input  type="text" />
             </div>
             <div className="input-form">
               <span>รหัสผ่าน</span>
@@ -25,11 +29,11 @@ export const Login = () => {
               <input type="password" />
             </div>
             <div className="btn-login ">
-              <button type="submit">เข้าสู่ระบบ</button>
+              <button onClick={handleToFood} type="submit">เข้าสู่ระบบ</button>
             </div>
             <div className="register-link">
               <span>
-                ยังไม่มีสมาชิก? <a href="">สมัครเลย</a>
+                ยังไม่มีสมาชิก? <a href="/register">สมัครเลย</a>
               </span>
             </div>
           </form>

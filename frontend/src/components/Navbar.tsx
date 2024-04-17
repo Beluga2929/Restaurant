@@ -1,13 +1,32 @@
-import '../components/Navbar.css'
+import "../components/Navbar.css";
+import logo from "../images/logo.png"
 export const Navbar = () => {
-    return (
-      <div  className="navbar"  style={{boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',backgroundColor:'#e32929' }}>
-        <p>ร้านอาหารกริว </p>
-        {/* <ul>
-            <li>
-                <a href="/food">สั่งอาหาร </a>
-            </li>
-        </ul> */}
+  
+  return (
+    <div className="navbar">
+      <div className="navbar-left">
+        <div className="logo">
+          <img src={logo} width={120} />
+          </div>
+        <ul>
+          <li>
+            <a href="/food">สั่งอาหาร </a>
+          </li>
+        </ul>
       </div>
-    );
-  };
+      <div className="navbar-right">
+        <ul>
+          <li>
+            <a href="/checklist">ตรวจสอบรายการอาหาร</a>
+          </li>
+          <li>
+            <a href="/status">สถานะรายการอาหาร</a>
+          </li>
+          <li>
+            <a href="/">logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
