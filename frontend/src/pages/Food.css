@@ -1,0 +1,13 @@
+.typeMenu ul{
+    display: flex;
+}
+.typeMenu a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: large;
+    color: black;
+   
+}
+.typeMenu li{
+    list-style: none;
+}
